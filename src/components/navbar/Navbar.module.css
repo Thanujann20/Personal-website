@@ -1,0 +1,93 @@
+@import "../../colours.css";
+
+.navbar {
+    width: 100%;
+    background-color: var(--color-primary);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.Logo {
+    width: 100px;
+    height: auto; 
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+
+.sections {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;  
+    list-style-type: none;  
+    padding: 0px;  
+    margin: 0px;
+}
+
+.sections li a {
+    padding-left: 50px;
+    margin-right: 100px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.sections li a:visited, .sections li a:active{
+    color: white;   
+}
+
+.sections li a:hover {
+    color: var(--color-tertiary);   
+}
+
+.menuBtn {
+  display: none;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width:1000px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .sections {
+    display: none;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+}
