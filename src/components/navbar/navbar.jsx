@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css"
+import { Link } from "react-router-dom";
 import { getImageUrl} from "../../utils.js"
 import { useState } from "react";
 
@@ -11,10 +12,9 @@ const Navbar = () => {
             <img className={styles.menuBtn} src={menuOpen ? getImageUrl("closeBtn.png"): getImageUrl("menuBtn.png")} alt="menu" 
                 onClick={() => setMenuOpen(!menuOpen)}/>
             <ul className={`${styles.sections} ${menuOpen ? styles.menuOpen : ""}`}
-                onClick={() => setMenuOpen(false)} 
-                aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}>
+                onClick={() => setMenuOpen(false)}>
                 <li>
-                    <a href="/">Home</a>
+                    <Link to="/">Home</Link>  
                 </li>
                 <li>
                     <a href="#about">About</a>

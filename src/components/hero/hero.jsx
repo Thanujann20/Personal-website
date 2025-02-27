@@ -1,20 +1,23 @@
-import styles from "./Hero.module.css"
-import { getImageUrl} from "../../utils.js"
+import styles from "./Hero.module.css";
+import { getImageUrl } from "../../utils.js";
 
-const hero = () => {
+const Hero = () => {
     return (
+      <>
         <section className={styles.container}>
-        <div className={styles.content}>
-        <img className={styles.profileImg} src={getImageUrl("picture.jpg")} alt="Me"/>
-            <h1 className={styles.title}>Hi, I'm Thanujann!</h1>
-            <p className={styles.description}>
-            I'm a fourth year Computer Science student at Toronto Metropolitan University.
-            </p>
-        </div>
-        <div className={styles.topBlur} />
-        <div className={styles.bottomBlur} />
+            <img className={styles.profileImg} src={getImageUrl("picture.jpg")} alt="Me" />
+            <div className={styles.content}>
+                <h1>Hi, My name is Thanujann!</h1>
+                <p className={styles.desc}>
+                  I'm a fourth-year Computer Science student at 
+                  Toronto Metropolitan University passionate about creating amazing applications.
+                </p>
+            </div>
         </section>
-    )
-}
+      </>
+    );
+  };
+  
+  export default Hero;
+  
 
-export default hero
