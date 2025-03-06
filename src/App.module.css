@@ -1,0 +1,23 @@
+@import "./colours.css";
+
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    background-color: var(--color-background);
+}
+  
+.mainContent {
+    flex: 1; 
+    padding: 20px; 
+}
+  
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+  

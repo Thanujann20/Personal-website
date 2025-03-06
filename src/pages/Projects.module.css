@@ -1,0 +1,12 @@
+@import "../colours.css";
+
+body  {
+    background-color: var(--color-background);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}

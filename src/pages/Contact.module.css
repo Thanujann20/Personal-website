@@ -1,0 +1,144 @@
+@import "../colours.css";
+
+body {
+background-color: var(--color-background);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 40px;
+    padding: 50px 50px;
+    gap: 30px;
+    flex-wrap: wrap; 
+    max-width: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 100px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+h1 {
+    margin-top: 150px;
+    color: var(--color-primary);
+    font-size: 2.2rem;
+}
+
+.igLogo {
+    width: 250px;
+    height: auto;
+}
+
+.mailLogo {
+    width: 175px;
+    height: auto;
+}
+
+.linkedInLogo {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.phoneLogo {
+    width: 175px;
+    height: auto;
+}
+
+.contactItem {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contactText {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover img {
+    animation: pulse 0.6s infinite alternate;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+@media screen and (max-width: 800px) {
+    body {
+        background-color: var(--color-background);
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-top: 120px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .imageContainer {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .linkedInLogo {
+        margin-left: 20px;
+    }
+
+    .contactTitle {
+        font-size: 1.8rem;
+    }
+
+    .contactForm {
+        width: 90%;
+    }
+
+    .contactItem {
+        margin-top: 10px;
+    }
+
+    .contactText {
+        font-size: 1rem;
+    }
+
+   
+}
+
+@media screen and (max-width: 600px) {
+
+    .contactText {
+        font-size: 0.9rem;
+    }
+}

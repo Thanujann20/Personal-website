@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "company": "FGF Brands",
+        "role": "Software QA",
+        "duration": "May 2023 - April 2024",
+        "description": "Tested web and mobile applications, ensuring functionality, performance, and usability. Developed and executed Selenium-based automation scripts to identify and document over 200 software defects using Azure DevOps. Collaborated with cross-functional teams in Agile environments.",
+        "image": "FGF.webp" 
+    },
+    {
+        "id": 2,
+        "company": "DSV Solutions",
+        "role": "Inventory Associate",
+        "duration": "June 2022 - September 2022",
+        "description": "Managed warehouse inventory, conducted audits, and assisted team in achieving accuracy rates over 98%",
+        "image": "DSV.jpeg" 
+    }
+  ]

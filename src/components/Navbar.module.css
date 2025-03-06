@@ -1,0 +1,91 @@
+@import "../colours.css";
+
+.navbar {
+    width: 100%;
+    background-color: var(--color-primary);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    margin: 0;
+}
+
+.logo {
+    width: 100px;
+    height: auto; 
+}
+
+.sections {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;  
+    list-style-type: none;  
+    padding: 0px;  
+    margin: 0px;
+}
+
+.sections li a {
+    padding: 10px 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.sections li a:hover {
+    color: var(--color-tertiary);
+}
+
+.menuBtn {
+    display: none;
+    cursor: pointer;
+    width: 40px; 
+    height: 40px;
+    background: none;
+    border: none;
+    position: relative;
+    z-index: 5;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 3;
+    }
+
+    .menuBtn {
+        display: block;
+    }
+
+    .sections {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: var(--color-primary);
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .menuOpen {
+        display: flex; 
+    }
+}
