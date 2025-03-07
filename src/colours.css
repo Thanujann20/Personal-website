@@ -4,4 +4,15 @@
     --color-primary: #004080;
     --color-secondary: #8697C4;
     --color-tertiary: #bdabda;
-  }
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}

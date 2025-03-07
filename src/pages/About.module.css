@@ -1,16 +1,5 @@
 @import "../colours.css";
 
-body {
-    background-color: var(--color-background);
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-}
-
 h1 {
     color: var(--color-primary);
     margin-bottom: 20px;
