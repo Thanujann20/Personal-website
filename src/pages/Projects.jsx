@@ -19,7 +19,7 @@ const Projects = () => {
                     <a href="https://github.com/Thanujann20/Macula/tree/firebase" target="blank"><img className={styles.gLogo} src={getImageUrl("github.webp")} alt="Github" /></a>
                 </div>
                 <div className={styles.projectCard}>
-                    <img className={styles.apocalypse} src={getImageUrl("PowerUp.png")} alt="PowerUp" />
+                    <img className={styles.powerUp} src={getImageUrl("PowerUp.png")} alt="PowerUp" />
                     <h1>PowerUp</h1>
                     <p>A fitness app that allows users to log their workouts and meals. Uses USDA food database API to search for over 400,000 food entries.</p>
                     <a href="https://github.com/Thanujann20/Fitness-App" target="blank"><img className={styles.gLogo} src={getImageUrl("github.webp")} alt="Github" /></a>
