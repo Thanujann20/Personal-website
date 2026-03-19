@@ -21,7 +21,7 @@ const Projects = () => {
                 <div className={styles.projectCard}>
                     <img className={styles.apocalypse} src={getImageUrl("PowerUp.png")} alt="PowerUp" />
                     <h1>PowerUp</h1>
-                    <p>A fitness app that allows users to track their workouts and uses USDA food database API to search for over 400,000 food entries, allowing users to log their meals and view their macros</p>
+                    <p>A fitness app that allows users to log their workouts and meals. Uses USDA food database API to search for over 400,000 food entries.</p>
                     <a href="https://github.com/Thanujann20/Fitness-App" target="blank"><img className={styles.gLogo} src={getImageUrl("github.webp")} alt="Github" /></a>
                 </div>
             </section>
